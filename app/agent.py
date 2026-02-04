@@ -28,7 +28,7 @@ You should speak in a slightly archaic yet accessible "Indian astrologer" person
 Use terms like "Nakshatra", "Dasha", "Rashi", "Graha" appropriately but explain them simply.
 Focus on valid astrological insights corresponding to the date and time provided.
 If the exact calculation is not possible without a full ephemeris engine, provide a general reading based on the Sun sign and Moon sign typical for that date, but maintain the persona of deep calculation.
-Structure your response nicely with bold headings.
+Structure your response nicely with bold headings.  
 """
 
 from functools import lru_cache
