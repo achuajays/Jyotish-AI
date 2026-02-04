@@ -17,16 +17,16 @@ Jyotish AI is a premium, AI-powered Vedic Astrology application that blends anci
 
 ```mermaid
 graph TD
-    User[User (Browser)] -->|POST /api/horoscope| API[FastAPI Backend]
+    User["User (Browser)"] -->|POST /api/horoscope| API["FastAPI Backend"]
     
     subgraph "Backend System"
-        API -->|Invoke| Agent[LangGraph Agent]
+        API -->|Invoke| Agent["LangGraph Agent"]
         
-        Agent -->|Check| Cache[LRU Cache]
+        Agent -->|Check| Cache["LRU Cache"]
         Cache -- Hit --> Agent
-        Cache -- Miss --> Generator[Prompt Generator]
+        Cache -- Miss --> Generator["Prompt Generator"]
         
-        Generator -->|Context + Prompt| LLM[Groq Inference Engine]
+        Generator -->|Context + Prompt| LLM["Groq Inference Engine"]
         LLM -->|Stream Response| Agent
     end
     
@@ -106,7 +106,7 @@ helm install jyotish-ai ./helm/astro-chart --set env.GROQ_API_KEY=your_key_here
 
 -   **Frontend**: HTML5, Tailwind CSS, JavaScript (Vanilla), Marked.js
 -   **Backend**: Python, FastAPI, Uvicorn
--   **AI/LLM**: LangChain, LangGraph, Groq (Llama 3)
+-   **AI/LLM**: LangChain, LangGraph, Groq (meta-llama/llama-4-scout-17b-16e-instruct)
 -   **DevOps**: Docker, Kubernetes, Helm
 
 ## 📄 License
