@@ -109,6 +109,6 @@ helm install jyotish-ai ./helm/astro-chart --set env.GROQ_API_KEY=your_key_here
 -   **AI/LLM**: LangChain, LangGraph, Groq (meta-llama/llama-4-scout-17b-16e-instruct)
 -   **DevOps**: Docker, Kubernetes, Helm
 
-## 📄 License
+## 📄 License  
 
 This project is licensed under the MIT License.
