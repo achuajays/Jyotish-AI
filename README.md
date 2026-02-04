@@ -10,7 +10,7 @@ Jyotish AI is a premium, AI-powered Vedic Astrology application that blends anci
 -   **Comprehensive Reports**: Covers 12+ aspects including Personality, Career, Relationships, Karmic Debts, and Age-wise predictions.
 -   **Instant Responses**: Implements intelligent caching (LRU) to provide instant results for repeated queries.
 -   **Premium UI**: A "Mystic" themed interface built with Tailwind CSS, featuring animations, drifting stars, and glassmorphism.
--   **High Performance**: Powered by `FastAPI` for the backend and `Groq` (Llama 3) for ultra-fast inference.
+-   **High Performance**: Powered by `FastAPI` for the backend and `Groq` (meta-llama/llama-4-scout-17b-16e-instruct) for ultra-fast inference.
 -   **Agentic Workflow**: Uses `LangGraph` to manage state and prompt engineering logic.
 
 ## 🏗️ Architecture
